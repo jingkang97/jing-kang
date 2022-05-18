@@ -6,7 +6,7 @@ import {FiExternalLink, FiGithub} from 'react-icons/fi'
 import styles from '../styles/Home.module.css'
 
 const hoverEffect = typeof window !== `undefined` ? require("hover-effect").default : null;
-const locomotiveScroll = typeof window !== `undefined` ? require("locomotive-scroll").default : null;
+// const locomotiveScroll = typeof window !== `undefined` ? require("locomotive-scroll").default : null;
 
 const Page = () => {
     const line1 = 'creating beautiful and'
@@ -53,7 +53,7 @@ const Page = () => {
     show: { y: 0, opacity: 1 }
     }    
     useEffect(() => {
-        var myAnimation = new hoverEffect({
+        var _myAnimation = new hoverEffect({
             parent: document.querySelector('.my-div'),
             image1: 'images/jk2.JPG',
             image2: 'images/young.jpg',
@@ -69,15 +69,15 @@ const Page = () => {
         if (typeof window === "undefined") {
             return;
           }
-          const scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
-            new LocomotiveScroll.default({
-                el: scrollRef.current,
-                smooth: true,
-                // reloadOnContextChange: true,
-                // multiplier: 0.65,
-                // inertia: 0.3,
-            });
-          });
+        //   const scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
+        //     new LocomotiveScroll.default({
+        //         el: scrollRef.current,
+        //         smooth: true,
+        //         // reloadOnContextChange: true,
+        //         // multiplier: 0.65,
+        //         // inertia: 0.3,
+        //     });
+        //   });
             // `useEffect`'s cleanup phase
             // return () => scroll.destroy();
     }, []);
@@ -161,7 +161,7 @@ const Page = () => {
                             animate={{ x: 0, y: 0, opacity: 1}}
                             transition={{ duration: 1, type: 'spring', delay: 5}}
                         >
-                        <Box mb={5} maxW='container.lg'>Hello there! 👋🏻 I'm a software engineer based in Singapore.
+                        <Box mb={5} maxW='container.lg'>Hello there! 👋🏻 I am a software engineer based in Singapore.
                             I have great interest in <span className={styles.highlight}>web</span> development, <span className={styles.highlight}>mobile</span> app developement
                             and <span className={styles.highlight}>human computer interactions</span>.</Box>
                         </motion.div>
@@ -170,8 +170,9 @@ const Page = () => {
                             animate={{ x: 0, y: 0, opacity: 1}}
                             transition={{ duration: 1, type: 'spring', delay: 5}}
                         >
+                        {/* <div className={styles.shadow}>Welcome</div> */}
                         <div className={styles.buttongroup}>
-                        <a target={'_blank'} href="mailto:ngjingkang97@gmail.com?subject=Hello there!" className={`${styles.button} ${styles.buttonarrow} ${styles.bgblue}`}>
+                        <a target={'_blank'} rel="nofollow noopener noreferrer" href="mailto:ngjingkang97@gmail.com?subject=Hello there!" className={`${styles.shadow} ${styles.buttonarrow} ${styles.bgblue}`}>
                             <span style={{marginRight:'5px'}}>Say Hi!</span>
                             <svg viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.arrowicon}>
                                 <g className={styles.arrowhead}>
@@ -198,9 +199,9 @@ const Page = () => {
                         animate={{ x: 0, opacity: 1}}
                         transition={{delay: 5, duration: 1}}
                     >
-                        <a href="https://github.com/jingkang97" target='_blank' className={styles.link}>👾 GH </a>
-                        <a href="https://www.instagram.com/ngjkjk/" target='_blank' className={styles.link}>📸 IN </a>
-                        <a href="https://www.linkedin.com/in/ngjingkang/" target='_blank' className={styles.link}>💼 LD </a>  
+                        <a href="https://github.com/jingkang97" target='_blank' rel="nofollow noopener noreferrer" className={styles.link}>👾 GH </a>
+                        <a href="https://www.instagram.com/ngjkjk/" target='_blank' rel="nofollow noopener noreferrer" className={styles.link}>📸 IN </a>
+                        <a href="https://www.linkedin.com/in/ngjingkang/" target='_blank' rel="nofollow noopener noreferrer" className={styles.link}>💼 LD </a>  
                     </motion.div>
                 </Box>
             </Box>
@@ -280,7 +281,7 @@ const Page = () => {
                     whileTap={{ scale: 1 }}
 
                 ><Box zIndex={5} backdropFilter='auto' backdropBlur='10px' className={styles.project} height='350px'>
-                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a href='https://github.com/jingkang97/memories' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97/memories' target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
+                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a rel="nofollow noopener noreferrer" href='https://github.com/jingkang97/memories' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97/memories' rel="nofollow noopener noreferrer" target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
                     <Box fontSize={{base: 30, md: 30, lg: 30}} className={styles.cardTitle}>Photobook </Box>
                     <Box mt={10} className={styles.cardBody}>
                         A social media web app for users to upload photos
@@ -310,7 +311,7 @@ const Page = () => {
 
                 >
                     <Box zIndex={5}   className={styles.project} height='350px'>
-                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a href='https://github.com/jingkang97' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97' target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
+                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a rel="nofollow noopener noreferrer" href='https://github.com/jingkang97' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97' rel="nofollow noopener noreferrer" target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
                     <Box fontSize={{base: 30, md: 30, lg: 30}} className={styles.cardTitle}>TravelAdvisor </Box>
                     <Box mt={10} className={styles.cardBody}>
                     A map web application that shows point of interest nearby
@@ -339,7 +340,7 @@ const Page = () => {
 
                 >
                     <Box zIndex={5} backdropFilter='auto' backdropBlur='10px' className={styles.project} height='350px'>
-                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a href='https://github.com/jingkang97' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97' target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
+                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a rel="nofollow noopener noreferrer" href='https://github.com/jingkang97' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97' rel="nofollow noopener noreferrer" target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
                     <Box fontSize={{base: 30, md: 30, lg: 30}} className={styles.cardTitle}>Internal Tool </Box>
                     <Box mt={10} className={styles.cardBody}>
                     An internal tool for the marketing team
@@ -367,7 +368,7 @@ const Page = () => {
                     whileTap={{ scale: 1 }}
 
                 ><Box zIndex={5} backdropFilter='auto' backdropBlur='10px' className={styles.project} height='350px'>
-                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a href='https://github.com/jingkang97/Dashboard' target='_blank'><FiExternalLink className={styles.icon}/></a><a href='https://github.com/jingkang97/Dashboard' target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
+                    <Box className={styles.cardHeader}><BsFolder className={styles.folder}/><Box className={styles.rightIcons}><a  rel="nofollow noopener noreferrer" href='https://github.com/jingkang97/Dashboard' target='_blank'><FiExternalLink className={styles.icon}/></a><a rel="nofollow noopener noreferrer" href='https://github.com/jingkang97/Dashboard' target='_blank'><FiGithub className={styles.icon}/></a></Box></Box>
                     <Box fontSize={{base: 30, md: 30, lg: 30}} className={styles.cardTitle}>DanceDance </Box>
                     <Box mt={10} className={styles.cardBody}>
                     A dashboard web application to visualise real time dance move stats and provide offline analytics
@@ -397,7 +398,7 @@ const Page = () => {
         <Box id='experiences' mt={{base: 10, md: 20, lg: 20}} className={styles.section} >
             <div className={styles.test}>
             <Box display={'flex'} flexDirection='row' alignItems={'center'} fontSize='20px'><span className={styles.title2}>Experiences</span>💼</Box>
-            <div className={styles.subheading}>some places that i've worked at ...</div>
+            <div className={styles.subheading}>some places that I have worked at ...</div>
             </div>
          </Box>
          <motion.div

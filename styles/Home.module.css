@@ -1,3 +1,6 @@
+
+
+
 .navigationWrapper{
   position: relative;
   z-index: 999999;
@@ -126,6 +129,79 @@
   height: 20px;
   flex: 1;
 }
+
+
+
+
+.shadow {
+  margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	width: 150px;
+	height: 60px;
+	/* background: linear-gradient(0deg, #000, #262626); */
+  /* background-color: #0a2540; */
+  background-color: white;
+  color: #666666;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+.shadow:before,
+.shadow:after {
+  border-radius: 10px;
+	content: "";
+	position: absolute;
+	/* top: -2px; */
+	/* left: -2px; */
+	background: linear-gradient(
+		90deg,
+    #91C3F7,
+    #9886E3,
+    #ECA3BC,
+    #F0E0D4,
+    #91C3F7,
+    #91C3F7,
+    #9886E3,
+    #ECA3BC,
+    #F0E0D4,
+    #91C3F7
+	);
+	background-size: 400%;
+	width: calc(95%);
+	height: calc(95%);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.shadow:hover{
+  transition: all 0.3s ease-in-out;
+  color: black;
+
+}
+
+.shadow:after {
+	filter: blur(15px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
 
 
 

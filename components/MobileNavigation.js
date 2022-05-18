@@ -59,15 +59,15 @@ export const MobileNavigation = ({ variants, isOpen, toggleOpen }) => (
       >
         <Box  fontWeight='500' fontSize={{base: 30, md: 40, xl: 50}} display='flex' flexDirection={{base: 'column', sm:'column', md:'row'}} justifyContent={{base: 'space-between', md: 'space-between'}}>
         <div className="navigation-top__left">
-          <Box fontSize={{base: 20, md: 25}}><h4 className={styles.navigationh4}>DON'T BE SHY!</h4></Box>
+          <Box fontSize={{base: 20, md: 25}}><h4 className={styles.navigationh4}>DON&apos;T BE SHY!</h4></Box>
           <div className={styles.navigation_top__left__links}>
-            <a className={styles.link_nav} href="https://github.com/jingkang97" rel="noopener" target="_blank">
+            <a className={styles.link_nav} href="https://github.com/jingkang97" rel="noopener noreferrer" target="_blank">
               👾 GH 
             </a>
-            <a className={styles.link_nav} href="https://www.linkedin.com/in/ngjingkang/" rel="noopener" target="_blank">
+            <a className={styles.link_nav} href="https://www.linkedin.com/in/ngjingkang/" rel="noopener noreferrer" target="_blank">
               💼 LD 
             </a>
-            <a className={styles.link_nav} href="https://www.instagram.com/ngjkjk" rel="noopener" target="_blank">
+            <a className={styles.link_nav} href="https://www.instagram.com/ngjkjk" rel="noopener noreferrer" target="_blank">
               📸 IN 
             </a>
           </div>

@@ -27,9 +27,7 @@ html {
 }
 
 
-main{
-  display: flex;
-}
+
 aside {
   background-color: #c4a8ff;
   backdrop-filter: blur(30px);

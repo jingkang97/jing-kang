@@ -1,8 +1,8 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Navbar from '../navbar.js'
 import Head from "next/head";
 
-const Main = ({ children, router }) => {
+const Main = ({ children }) => {
     return (
         <Box>
             <Head>
@@ -15,7 +15,7 @@ const Main = ({ children, router }) => {
             <Box 
             // w={'100%'}
             // bg='red'
-                h='100%'
+                h='100vh'
                 // overflow={'scroll'}
                 // maxW="container.md"
                 // h="100vh"
