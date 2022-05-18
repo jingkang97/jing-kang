@@ -294,30 +294,6 @@
   bottom: 15%;
 }
 
-/* 
-.email{
-  font-family: 'Mark Pro';
-  color:#0F192A;  
-  width: 120px;
-  height: 50px;
-  margin-top: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.1s ease-in-out;
-  font-weight: 600;
-  box-shadow: #0F192A 3px 3px 0px 0px;
-  border: solid 1px #0F192A;
-  background-color: white;
-}
-
-.email:hover{
-  color:white;  
-  box-shadow: black 0px 0px 0px 0px;
-  background-color: #0F192A;
-} */
 
 .link_nav{
   margin-left: 10px;

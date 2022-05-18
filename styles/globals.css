@@ -48,3 +48,22 @@ button {
   /* background-color: red; */
 }
 
+@font-face {
+  font-family: 'VersatileOutline';
+  src: url('../public/FontsFree-Net-VersatileOutline-Bold.ttf'); 
+ }
+
+ @font-face {
+  font-family: 'Legion';
+  src: url('../public/HelveticaBlkHollow.ttf'); 
+ }
+
+ @font-face {
+  font-family: 'koulen';
+  src: url('../public/Koulen-Regular.ttf'); 
+ }
+
+ @font-face {
+  font-family: 'RobotoFlex';
+  src: url('../public/RobotoFlex.ttf'); 
+ }
