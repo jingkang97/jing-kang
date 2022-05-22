@@ -212,6 +212,7 @@
 	height: calc(95%);
 	z-index: -1;
 	animation: animate 20s linear infinite;
+  -webkit-animation: animate 20s linear infinite;
 }
 
 .shadow:hover{
