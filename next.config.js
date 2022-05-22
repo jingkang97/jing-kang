@@ -1,4 +1,4 @@
 module.exports = {
     reactStrictMode: false,
-    optimizeFonts: false,
+    optimizeFonts: true,
 }
