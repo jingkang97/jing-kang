@@ -56,8 +56,8 @@ const Page = () => {
         var _myAnimation = new hoverEffect({
             parent: document.querySelector('.my-div'),
             image1: 'images/jk2.JPG',
-            image2: 'images/jk3.JPG',
-            displacementImage: 'images/jk3.JPG',
+            image2: 'images/young.JPG',
+            displacementImage: 'images/young.JPG',
             imagesRatio: 1500/1200
         });
     }, [])
@@ -229,8 +229,8 @@ const Page = () => {
                     <div className={styles.aside}>
                         <Box p={{base: '10px 10px'}} fontSize={{base: 12, md: 15}} top={{base: '10%', md: '0'}} className={styles.skill}>NEXTJS, REACTJS, HTML, CSS, PYTHON, MONGODB </Box>
                         <Box flexDir={{base: 'column', md: 'row'}} className={styles.about}>
-                            <Box borderRadius={'30px'} overflow={'hidden'} height={{base: 220, md: 250, lg: 300}} width={{base: '100%'}}>
-                                <div className='my-div' style={{height:'inherit', width:'inherit'}}></div>
+                            <Box className={styles.pic} height={{base: 220, md: 250, lg: 300}} width={{base: '100%'}}>
+                                <div className='my-div' style={{zIndex:0, borderRadius:'30px', height:'100%', width:'100%'}}></div>
                             </Box>
                             <div>
                                 <Box fontSize={{base: 20, md: 20, lg: 30}} margin={{base: 3, md: 5, lg: 5}} className={styles.heading}>

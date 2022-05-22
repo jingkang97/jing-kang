@@ -1,5 +1,8 @@
-
-
+.pic{
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
+}
 
 .navigationWrapper{
   position: relative;
