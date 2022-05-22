@@ -274,7 +274,7 @@ const Page = () => {
                         scale: 1,
                     }}
                     whileHover={{
-                    color: 'red',
+                    // color: 'red',
                     scale: 1.1,
                     transition: { duration: 0.3 },
                     }}

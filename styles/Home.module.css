@@ -159,7 +159,7 @@
   color: #666666;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .shadow:before,
 .shadow:after {
@@ -223,6 +223,19 @@
 
 .shadow:after {
 	filter: blur(15px);
+  -webkit-filter: blur(15px);
+}
+
+@-webkit-keyframes animate{
+  0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
 @keyframes animate {
@@ -584,15 +597,14 @@
 }
 
 @import url('http://fonts.cdnfonts.com/css/mark-pro');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
 
 /* @font-face {
   font-family: "Mark Pro";
   src: url("../public/MarkPro-Heavy.woff") format('woff');
-} */
-
-/* @font-face{
-  font-family: 'Mark Pro';
   src: url('../public/Mark-Pro.ttf');
+
 } */
 
 @font-face {
@@ -610,11 +622,10 @@
   src: url('../public/Koulen-Regular.ttf'); 
  }
 
- @font-face {
+ /* @font-face {
   font-family: 'RobotoFlex';
-  src: url('../public/RobotoFlex.ttf'); 
- }
-
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+ } */
 
 
 
@@ -917,29 +928,30 @@
 
 .project {
   backdrop-filter: blur(10px);
-  
   /* background-color: white; */
   padding: 20px;
   border-radius: 40px;
   border: 1px solid rgba(240, 240, 240, 0.9);
   color: silver;
+  transition: all 1s linear;
   -webkit-text-fill-color: silver;
 }
 
 .project:hover{
+  transition: all 1s linear;
   -webkit-text-fill-color: transparent;
-
 }
 
 .cardTitle {
   /* color: silver; */
+  transition: all 1s linear;
+  -webkit-box-decoration-break: clone;
   background: -webkit-linear-gradient(0deg, #F93169, #8CD8FE, #8CD8FE);
   -webkit-background-clip: text;
+  background-clip: text;
   font-weight: 800;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: inline;
+  
 }
 
 .cardHeader {
