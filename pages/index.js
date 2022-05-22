@@ -56,8 +56,8 @@ const Page = () => {
         var _myAnimation = new hoverEffect({
             parent: document.querySelector('.my-div'),
             image1: 'images/jk2.JPG',
-            image2: 'images/young.jpg',
-            displacementImage: 'images/young.jpg',
+            image2: 'snowflake.png',
+            displacementImage: 'snowflake.png',
             imagesRatio: 1500/1200
         });
     }, [])
