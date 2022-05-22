@@ -129,7 +129,7 @@ const Page = () => {
                 </motion.div>
 
                 <Box flexGrow={1} h="100%" maxW="container.lg" display="flex" flexDirection={'column'} bg='' justifyContent={'center'}>
-                <Heading zIndex={2} fontWeight={'900'} letterSpacing='-2px' whiteSpace='-10px' fontSize={{base:'50', md:'70', xl:'90'}}>
+                <Heading  zIndex={2} fontWeight={'900'} letterSpacing='-2px' whiteSpace='-10px' fontSize={{base:'50', md:'70', xl:'90'}}>
                 {/* <AnimatedParagraph /> */}
                     <motion.div
                     variants={sentence}
