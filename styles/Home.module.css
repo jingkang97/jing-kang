@@ -601,13 +601,28 @@
 
 /* @import url('http://fonts.cdnfonts.com/css/mark-pro'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+@font-face{
+  font-family: 'Mark Pro';
+  src: url('../public/Mark-Black.ttf');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
 
+@font-face{
+  font-family: 'Mark Pro';
+  src: url('../public/Mark-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
 
-@font-face {
-  font-family: "Mark Pro";
-  /* src: url("../public/MarkPro-Heavy.woff") format('woff'); */
-  src: url('../public/Mark.ttc');
-
+@font-face{
+  font-family: 'Mark Pro';
+  src: url('../public/Mark-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
