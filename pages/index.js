@@ -161,7 +161,7 @@ const Page = () => {
                             animate={{ x: 0, y: 0, opacity: 1}}
                             transition={{ duration: 1, type: 'spring', delay: 5}}
                         >
-                        <Box fontWeight={400} mb={5} maxW='container.lg'>Hello there! 👋🏻 I am a software engineer based in Singapore.
+                        <Box fontWeight={'medium'} mb={5} maxW='container.lg'>Hello there! 👋🏻 I am a software engineer based in Singapore.
                             I have great interest in <span className={styles.highlight}>web</span> development, <span className={styles.highlight}>mobile</span> app developement
                             and <span className={styles.highlight}>human computer interactions</span>.</Box>
                         </motion.div>
