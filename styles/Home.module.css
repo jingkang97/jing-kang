@@ -398,6 +398,9 @@
 }
 
 .subheading{
+  font-family: 'Mark Pro';
+  font-weight: 'medium';
+  text-decoration: none;
   letter-spacing: 0px;
   width: 100%;
   font-size: 15px;

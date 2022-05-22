@@ -211,7 +211,7 @@ const Page = () => {
         <Box id='about' className={styles.section} >
             <div className={styles.test}>
                 <Box display={'flex'} flexDirection='row' alignItems={'center'} fontSize='20px'><span className={styles.title}>About me</span>✌🏻</Box>
-                <div className={styles.subheading}>some stuff you should know ...</div>
+                <Box fontWeight={500} className={styles.subheading}>some stuff you should know ...</Box>
             </div>
         </Box>
         <Box pb={'100px'} w='container' className={styles.nameSection}>
@@ -254,7 +254,7 @@ const Page = () => {
         <Box id='projects' mt={{base: 10, md: 20, lg: 20}} className={styles.section} >
             <div className={styles.test}>
             <Box display={'flex'} flexDirection='row' alignItems={'center'} fontSize='20px'><span className={styles.title1}>Projects</span>📂</Box>
-            <div className={styles.subheading}>some stuff that i worked on ...</div>
+            <Box fontWeight={500} className={styles.subheading}>some stuff that i worked on ...</Box>
             </div>
          </Box>
             <Box w='container'>
@@ -398,7 +398,7 @@ const Page = () => {
         <Box id='experiences' mt={{base: 10, md: 20, lg: 20}} className={styles.section} >
             <div className={styles.test}>
             <Box display={'flex'} flexDirection='row' alignItems={'center'} fontSize='20px'><span className={styles.title2}>Experiences</span>💼</Box>
-            <div className={styles.subheading}>some places that I have worked at ...</div>
+            <Box fontWeight={500} className={styles.subheading}>some places that I have worked at ...</Box>
             </div>
          </Box>
          <motion.div
