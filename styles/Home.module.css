@@ -7,6 +7,14 @@
   /* background-color: red; */
 }
 
+.menubar{
+  border: 1px solid white; 
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px); 
+  border-radius:20px
+
+}
+
 .menuTop{
   position: fixed;
   width: 100%;
@@ -161,6 +169,32 @@
 	/* top: -2px; */
 	/* left: -2px; */
 	background: linear-gradient(
+		90deg,
+    #91C3F7,
+    #9886E3,
+    #ECA3BC,
+    #F0E0D4,
+    #91C3F7,
+    #91C3F7,
+    #9886E3,
+    #ECA3BC,
+    #F0E0D4,
+    #91C3F7
+	);
+  background: -webkit-linear-gradient(
+		90deg,
+    #91C3F7,
+    #9886E3,
+    #ECA3BC,
+    #F0E0D4,
+    #91C3F7,
+    #91C3F7,
+    #9886E3,
+    #ECA3BC,
+    #F0E0D4,
+    #91C3F7
+	);
+  background: -moz-linear-gradient(
 		90deg,
     #91C3F7,
     #9886E3,
@@ -550,10 +584,10 @@
 
 @import url('http://fonts.cdnfonts.com/css/mark-pro');
 
-@font-face {
+/* @font-face {
   font-family: "Mark Pro";
   src: url("../public/MarkPro-Heavy.woff") format('woff');
-}
+} */
 
 /* @font-face{
   font-family: 'Mark Pro';

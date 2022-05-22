@@ -10,7 +10,7 @@ export default class Document extends NextDocument {
         <script src="three.min.js"></script>
         <script src="TweenMax.min.js"></script>
         <script src="dist/hover.umd.js"></script>
-        {/* <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet"/> */}
+        <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet"/>
         <link href="http://fonts.cdnfonts.com/css/fenwick" rel="stylesheet"></link>
         <link href="http://fonts.cdnfonts.com/css/goffik-outline" rel="stylesheet" />
         </Head>

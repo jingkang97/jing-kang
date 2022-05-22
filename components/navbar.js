@@ -49,7 +49,7 @@ const NavBar = () => {
                     animate={isOpen ? "open": "closed"}
                 >
                 <Container 
-                    style={{ border: '1px solid white', backdropFilter:'blur(10px)', borderRadius:'20px'}}
+                    className={styles.menubar}
                     display="flex" 
                     p={2} 
                     maxW="container.xl"
