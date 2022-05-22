@@ -55,7 +55,7 @@ const Page = () => {
     useEffect(() => {
         var _myAnimation = new hoverEffect({
             parent: document.querySelector('.my-div'),
-            image1: 'images/jk2.JPG',
+            image1: 'images/jk3.JPG',
             image2: 'images/young.JPG',
             displacementImage: 'images/young.JPG',
             imagesRatio: 1500/1200
